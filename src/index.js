@@ -26,7 +26,7 @@ const MainBody = function () {
 
 const HeaderMain = function () {
   return (
-    <h1>REACT COURSE</h1>
+    <h1 className='text-primary'>REACT COURSE</h1>
   );
 } 
 
