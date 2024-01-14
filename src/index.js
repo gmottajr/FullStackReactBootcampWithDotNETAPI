@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import "./css/styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const subHeaderStyle = {
@@ -7,17 +8,18 @@ const subHeaderStyle = {
   backgroundColor:"blueviolet"
 }
 const MainBody = function () {
+  const whatWeWillLearn = 'React JS';
   return (
     <div>
       <p>
-        In this course, we will learn React by building TaskOpedia!
+        In this course, we will learn {whatWeWillLearn} by building TaskOpedia!
       </p>
       <ul>
         <li>
-          Call Ben.
+          Basic Foundations.
         </li>
         <li>
-          Got to Walmart!
+          Functional and Class Components!
         </li>
       </ul>
     </div>
@@ -26,7 +28,7 @@ const MainBody = function () {
 
 const HeaderMain = function () {
   return (
-    <h1 className='text-primary'>REACT COURSE</h1>
+    <h1 className='heading1'>REACT COURSE</h1>
   );
 } 
 
