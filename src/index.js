@@ -7,6 +7,12 @@ const subHeaderStyle = {
   color:"#ccc", 
   backgroundColor:"blueviolet"
 }
+
+const TotalLectures = function () {
+  const totalLecture = 3;
+  return (<p className='text-info'>Total Lecture - {totalLecture}</p>);
+}
+
 const MainBody = function () {
   const whatWeWillLearn = 'React JS';
   return (
@@ -14,6 +20,7 @@ const MainBody = function () {
       <p>
         In this course, we will learn {whatWeWillLearn} by building TaskOpedia!
       </p>
+      <TotalLectures />
       <ul>
         <li>
           Basic Foundations.
