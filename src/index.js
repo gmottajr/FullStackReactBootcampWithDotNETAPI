@@ -1,23 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./css/styles.css";
-import HeaderGm from './components/Header';
-import Student from './components/Student';
+import HeaderGm from './components/Layout/Header';
 import MainBody from './components/MainBody';
-import FooterGm from './components/Footer';
+import FooterGm from './components/Layout/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
  
 root.render(
-  <div className='container'>
+  <div className='container' style={{backgroundColor:"blueviolet", color:"#eee"}}>
       <HeaderGm />
-      <MainBody />
-      <div className='row'>
-        Students Enrolled
+      <div className='px-4'>
+        <MainBody />
       </div>
-      < Student experience={2} name = 'Kris Walley'/>
-      < Student experience={5} name = 'Angel Sanderson'/>
-      < Student experience={8} name = 'Rene Parker'/>
       <FooterGm />
   </div>);
 
